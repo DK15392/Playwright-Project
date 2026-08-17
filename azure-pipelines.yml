@@ -20,6 +20,14 @@ steps:
   displayName: 'Install Playwright Browsers'
 
 - script: |
+    echo "Current Directory"
+    pwd
+
+    echo "Repository Files"
+    ls -R
+  displayName: 'Debug Files'
+
+- script: |
     npx playwright test
   displayName: 'Run Playwright Tests'
 
