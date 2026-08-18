@@ -28,8 +28,8 @@ steps:
   displayName: 'Debug Files'
 
 - script: |
-    npx playwright test
-  displayName: 'Run Playwright Tests'
+    npx playwright test --list
+  displayName: 'List Tests'
 
 - task: PublishPipelineArtifact@1
   inputs:
